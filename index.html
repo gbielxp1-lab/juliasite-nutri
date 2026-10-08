@@ -1,77 +1,514 @@
 <!DOCTYPE html>
-<html lang="pt-BR"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Julia Rosas | Nutricionista</title>
-<meta name="description" content="Nutrição para transformar seu corpo sem abrir mão da sua vida. Estratégia, equilíbrio e resultados. Rio de Janeiro.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Jost:wght@300;400;500&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"></head><body>
-<header id="hd"><a class="logo" href="#inicio">Julia Rosas<small>Nutricionista</small></a>
-<nav aria-label="Principal"><a href="#inicio">Início</a><a href="#sobre">Sobre mim</a><a href="#metodo">Método</a><a href="#resultados">Resultados</a><a href="#contato">Contato</a></nav>
-<div class="hr"><a href="https://wa.me/" aria-label="WhatsApp"><svg class="wa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-3.7-.9-3.1-1.3-5-4.4-5.2-4.6-.1-.2-1.2-1.600-1.200-3s.7-2.100 1-2.400c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.200c.1.200.1.400 0 .6l-.4.6c-.2.200-.3.300-.1.600.7 1.100 1.500 2 2.700 2.600.3.200.5.100.7-.1l.8-1c.2-.3.4-.2.700-.1l2 1c.3.100.5.200.5.400.1.200.1.800-.1 1.400Z"/></svg></a><a class="btn" href="#contato">Agendar consulta</a></div></header>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ias Cookies — Cookies caseiros na Ilha do Governador</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:      #FFF6E9;
+    --cream-deep: #F6E8D3;
+    --cocoa:      #2E1B12;
+    --cocoa-soft: #5A3B2A;
+    --raspberry:  #D6456A;
+    --raspberry-deep: #B22F52;
+    --caramel:    #C68642;
+    --cream-line: rgba(46,27,18,0.12);
+    --shadow-soft: 0 18px 40px -20px rgba(46,27,18,0.35);
+  }
 
-<main>
-<section id="inicio">
-<div><span class="sm">Nutrição personalizada</span>
-<h1>Nutrição para transformar seu corpo sem abrir mão da sua vida.</h1>
-<p>Estratégia, equilíbrio e resultados. Um acompanhamento leve e sustentável, desenhado para a sua rotina.</p>
-<div class="btns"><a class="btn" href="#contato">Agendar consulta →</a><a class="btn o" href="#metodo">Conhecer meu trabalho</a></div>
-<div class="ind"><span>+500 pacientes atendidos</span><span>Atendimento personalizado</span><span>Online e presencial</span></div></div>
-<div style="position:relative"><div class="ph hero-ph has" id="foto-hero"><img src="assets/hero.webp" alt="Julia Rosas, nutricionista, sorrindo no sofá" style="object-position:68% 35%"></div></div>
-</section>
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--cocoa);
+    font-family:'Nunito Sans', sans-serif;
+    font-size:17px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 28px;}
 
-<section id="metodo-vid" class="rv">
-<div class="vid" id="vid"><video id="v" playsinline preload="metadata" poster="assets/poster.jpg" src="assets/video.mp4"></video><button class="pl" aria-label="Reproduzir vídeo"><b></b>Avaliações e resultados</button></div>
-<div><span class="sm">Não é só sobre dieta.</span><h2><em>É sobre estratégia.</em></h2>
-<p>Meu trabalho vai muito além de montar um cardápio. É entender sua rotina, seus objetivos e construir estratégias que realmente façam sentido para você.</p>
-<a class="lnk" href="#metodo">Conheça meu método →</a></div>
-<blockquote>Cada paciente tem uma história. O acompanhamento também precisa ser individual.</blockquote>
-</section>
+  h1,h2,h3{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    margin:0;
+    color:var(--cocoa);
+    letter-spacing:-0.01em;
+  }
 
-<section class="gal" aria-label="Fotos">
-<div class="ph g1 has" data-p="0.04"><img src="assets/galeria-1.webp" alt="Julia Rosas em retrato" loading="lazy" style="object-position:50% 25%"></div>
-<div class="ph g2" data-p="-0.06">FOTO MENOR<br>sobreposta</div>
-<div class="ph g3" data-p="0.05">FOTO PARCIAL<br>(sai da margem)</div>
-<figcaption>Rotina real, resultado possível.</figcaption>
-</section>
+  /* ---------- Botões ---------- */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:15px 28px;
+    border-radius:100px;
+    font-family:'Nunito Sans',sans-serif;
+    font-weight:700;
+    font-size:16px;
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .btn-primary{
+    background:var(--raspberry);
+    color:#FFF6E9;
+    box-shadow:0 10px 24px -8px rgba(214,69,106,0.55);
+  }
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 28px -8px rgba(214,69,106,0.6);}
+  .btn-ghost{
+    background:transparent;
+    color:var(--cocoa);
+    border:1.5px solid var(--cream-line);
+  }
+  .btn-ghost:hover{border-color:var(--cocoa);}
 
-<section id="alimentos" class="rv"><span class="sm">Alimentação não precisa ser complicada.</span>
-<div class="al"><h2>Descubra o poder de cada alimento.</h2><p>Conheça formas simples de incluir bons alimentos na sua rotina.</p></div></section>
+  /* ---------- Header ---------- */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(255,246,233,0.88);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--cream-line);
+  }
+  .nav{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:14px 28px;
+  }
+  .brand{display:flex;align-items:center;gap:12px;}
+  .brand img{width:42px;height:42px;border-radius:50%;object-fit:cover;}
+  .brand span{font-family:'Fraunces',serif;font-weight:600;font-size:20px;}
+  .nav-links{display:flex;align-items:center;gap:30px;font-weight:600;font-size:15px;}
+  .nav-links a:not(.btn){opacity:.75;transition:opacity .15s;}
+  .nav-links a:not(.btn):hover{opacity:1;}
+  .nav-toggle{display:none;}
 
-<section id="resultados" class="rv">
-<span class="sm">Resultados</span>
-<h2>Resultados que vão além da balança.</h2>
-<!-- EDITE OS NÚMEROS ABAIXO (data-n) -->
-<div class="nums"><div><b data-n="500" data-pre="+">0</b><span>pacientes atendidos</span></div><div><b data-n="5" data-suf=" anos">0</b><span>de experiência</span></div><div><b data-n="98" data-suf="%">0</b><span>de satisfação</span></div></div>
-<!-- EDITE OS DEPOIMENTOS -->
-<div class="dep"><div><p>“Hoje eu consigo manter uma alimentação saudável sem deixar de viver.”</p><cite>— Mariana, paciente</cite></div><div><p>“[Depoimento 2]”</p><cite>— Nome, paciente</cite></div><div><p>“[Depoimento 3]”</p><cite>— Nome, paciente</cite></div></div>
-</section>
+  /* ---------- Hero ---------- */
+  .hero{
+    padding:76px 0 90px;
+    overflow:hidden;
+  }
+  .hero .wrap{
+    display:grid;
+    grid-template-columns:1.05fr 0.95fr;
+    gap:56px;
+    align-items:center;
+  }
+  .tag{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:14px;font-weight:700;color:var(--cocoa-soft);
+    padding:7px 14px;border:1px solid var(--cream-line);border-radius:100px;
+    margin-bottom:22px;background:var(--cream-deep);
+  }
+  .tag svg{width:14px;height:14px;flex:none;}
+  .hero h1{
+    font-size:clamp(2.4rem, 4.2vw, 3.4rem);
+    line-height:1.08;
+  }
+  .hero h1 em{
+    font-style:italic;
+    color:var(--raspberry);
+  }
+  .hero p.lede{
+    margin-top:22px;
+    max-width:46ch;
+    font-size:19px;
+    color:var(--cocoa-soft);
+  }
+  .hero-ctas{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap;}
+  .hero-stats{
+    margin-top:38px;
+    display:flex;gap:34px;
+    padding-top:26px;
+    border-top:1px solid var(--cream-line);
+    max-width:440px;
+  }
+  .hero-stats div b{
+    display:block;font-family:'Fraunces',serif;font-size:26px;font-weight:600;
+  }
+  .hero-stats div span{font-size:14px;color:var(--cocoa-soft);}
 
-<section id="sobre" class="rv">
-<div class="ph sob-ph has" data-p="0.04"><img src="assets/sobre.webp" alt="Julia Rosas, nutricionista" loading="lazy" style="object-position:50% 20%"></div>
-<div><span class="sm">Sobre mim</span><h2>Muito prazer,<br>eu sou Julia Rosas.</h2>
-<p>[Formação, especialização, abordagem e propósito. Substituir pelo texto real.]</p>
-<p>Acredito que uma alimentação saudável precisa caber na vida real, com estratégia e equilíbrio.</p>
-<span class="crn">CRN [NÚMERO] • Nutricionista • [ESPECIALIDADE]</span>
-<div class="sig" aria-hidden="true">Julia Rosas</div></div>
-</section>
+  .hero-art{position:relative;}
+  .hero-art .frame{
+    position:relative;
+    border-radius:38% 62% 58% 42% / 48% 42% 58% 52%;
+    overflow:hidden;
+    box-shadow:var(--shadow-soft);
+    transform:rotate(-3deg);
+    animation:settle .9s cubic-bezier(.2,.8,.25,1) both;
+    aspect-ratio:8/9;
+  }
+  .hero-art .frame img{width:100%;height:100%;object-fit:cover;}
+  .hero-badge{
+    position:absolute;
+    bottom:-18px;left:-18px;
+    background:var(--cocoa);
+    color:var(--cream);
+    padding:16px 20px;
+    border-radius:20px;
+    font-family:'Fraunces',serif;
+    font-size:15px;
+    line-height:1.3;
+    max-width:200px;
+    box-shadow:0 14px 30px -10px rgba(46,27,18,0.5);
+    animation:pop .7s .5s cubic-bezier(.2,.8,.25,1) both;
+  }
+  .hero-badge b{color:var(--raspberry);}
 
-<section id="metodo" class="rv">
-<h2>Um processo simples, mas muito completo.</h2>
-<div class="steps">
-<button class="st"><small>01</small><h3>Avaliar</h3><p>Avaliação completa do seu perfil, histórico e exames.</p></button>
-<button class="st"><small>02</small><h3>Entender</h3><p>Sua rotina, seus objetivos e suas preferências.</p></button>
-<button class="st"><small>03</small><h3>Planejar</h3><p>Estratégia personalizada para a sua realidade.</p></button>
-<button class="st"><small>04</small><h3>Acompanhar</h3><p>Suporte contínuo e ajustes sempre que necessário.</p></button>
-<button class="st"><small>05</small><h3>Evoluir</h3><p>Mais saúde, bem-estar e autonomia.</p></button>
-</div></section>
+  @keyframes settle{
+    from{opacity:0; transform:rotate(-9deg) scale(.93) translateY(18px);}
+    to{opacity:1; transform:rotate(-3deg) scale(1) translateY(0);}
+  }
+  @keyframes pop{
+    from{opacity:0; transform:translateY(10px) scale(.94);}
+    to{opacity:1; transform:translateY(0) scale(1);}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .hero-art .frame, .hero-badge{animation:none;}
+  }
 
-<section id="contato">
-<div><h2>Seu próximo passo pode começar aqui.</h2><a class="btn" href="https://wa.me/">Agendar consulta →</a>
-<div class="soc"><a href="https://wa.me/">WhatsApp</a><a href="https://instagram.com/juliarosas.nutri">Instagram</a></div></div>
-<div class="ph has" data-p="0.05"><img src="assets/cta-prato.webp" alt="Prato saudável com frango, abacate e tomate" loading="lazy"></div>
-</section>
+  /* ---------- Seções genéricas ---------- */
+  section{padding:88px 0;}
+  .section-head{max-width:56ch;margin-bottom:52px;}
+  .section-head h2{font-size:clamp(1.9rem,3vw,2.5rem);}
+  .section-head p{margin-top:14px;color:var(--cocoa-soft);font-size:18px;}
+
+  /* ---------- Quem faz ---------- */
+  .sobre{background:var(--cream-deep);}
+  .sobre .wrap{
+    display:grid;grid-template-columns:0.85fr 1.15fr;gap:60px;align-items:center;
+  }
+  .sobre-photo{
+    aspect-ratio:1/1;
+    display:flex;align-items:center;justify-content:center;
+    position:relative;
+  }
+  .sobre-photo::before{
+    content:"";
+    position:absolute;inset:6%;
+    border:2px dashed var(--cream-line);
+    border-radius:50%;
+  }
+  .sobre-photo img{
+    width:64%;border-radius:50%;object-fit:cover;
+    box-shadow:var(--shadow-soft);
+    aspect-ratio:1/1;
+  }
+  .sobre-text p{color:var(--cocoa-soft);font-size:18px;margin:18px 0 0;}
+  .sobre-text .assinatura{
+    margin-top:28px;font-family:'Fraunces',serif;font-style:italic;font-size:19px;color:var(--raspberry-deep);
+  }
+
+  /* ---------- Sabores ---------- */
+  .sabores-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:32px;
+  }
+  .sabor-card{
+    background:#fff;
+    border:1px solid var(--cream-line);
+    border-radius:26px;
+    overflow:hidden;
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .sabor-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-soft);}
+  .sabor-photo{aspect-ratio:4/3;overflow:hidden;}
+  .sabor-photo img{width:100%;height:100%;object-fit:cover;}
+  .sabor-body{padding:26px 28px 30px;}
+  .sabor-body .kicker{font-size:13px;font-weight:800;color:var(--raspberry);text-transform:uppercase;letter-spacing:.06em;}
+  .sabor-body h3{margin-top:8px;font-size:24px;}
+  .sabor-body p{color:var(--cocoa-soft);margin-top:10px;font-size:16px;}
+  .sabor-body a{
+    margin-top:18px;display:inline-flex;align-items:center;gap:6px;
+    font-weight:800;color:var(--cocoa);font-size:15px;
+    border-bottom:2px solid var(--caramel);padding-bottom:2px;
+  }
+
+  /* ---------- Depoimentos ---------- */
+  .depoimentos{background:var(--cocoa);color:var(--cream);}
+  .depoimentos .section-head h2{color:var(--cream);}
+  .depoimentos .section-head p{color:#D9C4B4;}
+  .dep-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:26px;
+  }
+  .dep-card{
+    background:#3C2519;
+    border-radius:22px;
+    padding:22px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+  }
+  .dep-photo{border-radius:14px;overflow:hidden;aspect-ratio:4/3;}
+  .dep-photo img{width:100%;height:100%;object-fit:cover;}
+  .dep-quote{font-family:'Fraunces',serif;font-size:18px;line-height:1.45;font-style:italic;}
+  .dep-quote span{display:block;margin-top:10px;font-family:'Nunito Sans',sans-serif;font-style:normal;font-weight:700;font-size:14px;color:#D9C4B4;}
+  .dep-card.text-only{justify-content:center;}
+
+  /* ---------- Como pedir ---------- */
+  .como-pedir .wrap{
+    display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;
+  }
+  .passos{list-style:none;margin:0;padding:0;counter-reset:passo;}
+  .passos li{
+    counter-increment:passo;
+    display:flex;gap:20px;padding:22px 0;border-top:1px solid var(--cream-line);
+  }
+  .passos li:last-child{border-bottom:1px solid var(--cream-line);}
+  .passos li::before{
+    content:counter(passo);
+    font-family:'Fraunces',serif;font-weight:600;font-size:20px;
+    width:40px;height:40px;flex:none;border-radius:50%;
+    background:var(--cream-deep);display:flex;align-items:center;justify-content:center;
+    color:var(--raspberry-deep);
+  }
+  .passos h3{font-size:18px;margin-bottom:4px;}
+  .passos p{margin:0;color:var(--cocoa-soft);font-size:16px;}
+
+  .cta-card{
+    background:linear-gradient(165deg, var(--raspberry) 0%, var(--raspberry-deep) 100%);
+    border-radius:28px;
+    padding:44px 38px;
+    color:#fff;
+    box-shadow:var(--shadow-soft);
+  }
+  .cta-card h3{color:#fff;font-size:26px;}
+  .cta-card p{color:#FBDDE4;margin-top:12px;font-size:16px;}
+  .cta-card .btn{margin-top:24px;background:#fff;color:var(--raspberry-deep);}
+  .cta-card .local{
+    margin-top:28px;padding-top:22px;border-top:1px solid rgba(255,255,255,.28);
+    font-size:15px;color:#FBDDE4;display:flex;gap:10px;align-items:flex-start;
+  }
+
+  /* ---------- Footer ---------- */
+  footer{
+    padding:44px 0;border-top:1px solid var(--cream-line);
+  }
+  footer .wrap{
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;
+  }
+  footer .brand span{font-size:17px;}
+  footer .foot-links{display:flex;gap:22px;font-size:14px;font-weight:700;color:var(--cocoa-soft);}
+
+  /* ---------- Responsivo ---------- */
+  @media (max-width:860px){
+    .nav-links{position:fixed;inset:0 0 auto auto;top:70px;right:16px;left:16px;
+      background:var(--cream);border:1px solid var(--cream-line);border-radius:20px;
+      flex-direction:column;align-items:stretch;padding:18px;gap:14px;
+      box-shadow:var(--shadow-soft);
+      display:none;
+    }
+    .nav-links.open{display:flex;}
+    .nav-links a.btn{text-align:center;justify-content:center;}
+    .nav-toggle{
+      display:flex;align-items:center;justify-content:center;
+      width:42px;height:42px;border-radius:50%;border:1px solid var(--cream-line);
+      background:var(--cream-deep);
+    }
+    .hero .wrap{grid-template-columns:1fr;}
+    .hero-art{order:-1;max-width:340px;margin:0 auto 20px;}
+    .hero p.lede{max-width:none;}
+    .hero-stats{flex-wrap:wrap;gap:26px;}
+    .sobre .wrap{grid-template-columns:1fr;}
+    .sobre-photo{max-width:320px;margin:0 auto;}
+    .sabores-grid{grid-template-columns:1fr;}
+    .dep-grid{grid-template-columns:1fr;}
+    .como-pedir .wrap{grid-template-columns:1fr;}
+    section{padding:64px 0;}
+    footer .wrap{justify-content:flex-start;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav wrap">
+    <a href="#topo" class="brand">
+      <img src="img/logo.png" alt="Logo Ias Cookies">
+      <span>Ias Cookies</span>
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div class="nav-links">
+      <a href="#sabores">Sabores</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#pedir">Como pedir</a>
+      <a class="btn btn-primary" href="https://wa.me/5521973918684" target="_blank" rel="noopener">Fazer pedido</a>
+    </div>
+  </nav>
+</header>
+
+<main id="topo">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7.5-4.6-10-9.3C0.3 8 2 4 6 4c2 0 3.3 1 4 2 0.7-1 2-2 4-2 4 0 5.7 4 4 7.7-2.5 4.7-10 9.3-10 9.3Z"/></svg>
+          Ilha do Governador, RJ
+        </span>
+        <h1>Cookie recheado até o<br><em>último pedaço</em>.</h1>
+        <p class="lede">Massa macia por fora, generosa por dentro. Cada cookie é feito à mão, um de cada vez, por Ias — e sai da cozinha direto pra sua casa.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="https://wa.me/5521973918684" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.45 1.32 4.95L2 22l5.24-1.37c1.44.79 3.06 1.2 4.8 1.2 5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2Zm5.79 14.24c-.24.68-1.4 1.3-1.93 1.35-.5.05-1.02.24-3.43-.72-2.9-1.15-4.77-4.08-4.92-4.28-.14-.2-1.18-1.57-1.18-3 0-1.42.75-2.12 1.02-2.41.27-.29.58-.36.78-.36h.56c.18 0 .42-.03.65.5.24.55.8 1.9.87 2.04.07.15.12.32.02.51-.1.2-.15.32-.3.5-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.3.76 1.26 1.63 2.04 1.12 1 2.06 1.31 2.36 1.46.3.15.47.13.65-.08.18-.2.75-.87.96-1.17.2-.3.4-.24.68-.14.27.1 1.75.83 2.05 .98.3.15.5.22.57.35.07.13.07.75-.17 1.43Z"/></svg>
+            Fazer pedido no WhatsApp
+          </a>
+          <a class="btn btn-ghost" href="#sabores">Ver sabores</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>209</b><span>seguindo de perto no Instagram</span></div>
+          <div><b>100%</b><span>feito à mão, sem pressa</span></div>
+          <div><b>3</b><span>sabores, sem enrolação</span></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="frame"><img src="img/hero.jpg" alt="Cookie da Ias Cookies partido ao meio, com recheio de nutella derretido"></div>
+        <div class="hero-badge">"Nunca comi um cookie tão bom." <b>— cliente</b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="wrap">
+      <div class="sobre-photo">
+        <img src="img/logo.png" alt="Logo Ias Cookies">
+      </div>
+      <div class="sobre-text">
+        <h2>Quem assa é a Ias.</h2>
+        <p>A Ias Cookies nasceu de uma cozinha na Ilha do Governador, feita por <strong>@iassbarbosa</strong> com uma receita testada e refeita até chegar no ponto: crocante na borda, macio no meio, sem economizar no recheio.</p>
+        <p>Nada de produção em massa — os pedidos são combinados um a um pelo WhatsApp, e cada fornada sai fresquinha para quem pediu.</p>
+        <p class="assinatura">Cookies caseiros + muito amor.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SABORES -->
+  <section id="sabores">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Os sabores</h2>
+        <p>Três cookies, feitos do jeito que merecem ser feitos. Sem enrolação, sem sabor de mês — só o que já foi testado e aprovado.</p>
+      </div>
+      <div class="sabores-grid">
+        <article class="sabor-card">
+          <div class="sabor-photo"><img src="img/tradicional.jpg" alt="Cookies tradicionais com gotas de chocolate em um prato"></div>
+          <div class="sabor-body">
+            <span class="kicker">O clássico</span>
+            <h3>Tradicional</h3>
+            <p>Gotas de chocolate espalhadas por toda a massa, borda dourada e crocante, miolo macio. O cookie que não sai de moda.</p>
+            <a href="https://wa.me/5521973918684?text=Oi!%20Quero%20pedir%20o%20cookie%20Tradicional%20%F0%9F%8D%AA" target="_blank" rel="noopener">Pedir esse pelo WhatsApp →</a>
+          </div>
+        </article>
+        <article class="sabor-card">
+          <div class="sabor-photo"><img src="img/nutella-jar.jpg" alt="Cookies recheados de nutella ao lado do potinho de nutella"></div>
+          <div class="sabor-body">
+            <span class="kicker">O queridinho</span>
+            <h3>Recheado de Nutella</h3>
+            <p>O mais pedido da casa. Massa amanteigada escondendo um recheio generoso de nutella no centro — vai derreter na hora certa.</p>
+            <a href="https://wa.me/5521973918684?text=Oi!%20Quero%20pedir%20o%20cookie%20de%20Nutella%20%F0%9F%8D%AB" target="_blank" rel="noopener">Pedir esse pelo WhatsApp →</a>
+          </div>
+        </article>
+        <article class="sabor-card">
+          <div class="sabor-photo"><img src="img/docedeleite.jpg" alt="Cookie recheado de doce de leite partido ao meio"></div>
+          <div class="sabor-body">
+            <span class="kicker">A novidade</span>
+            <h3>Doce de Leite</h3>
+            <p>Massa macia com um recheio cremoso de doce de leite no centro — doce na medida certa, do jeito que a casa gosta.</p>
+            <a href="https://wa.me/5521973918684?text=Oi!%20Quero%20pedir%20o%20cookie%20de%20Doce%20de%20Leite%20%F0%9F%8D%AE" target="_blank" rel="noopener">Pedir esse pelo WhatsApp →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="depoimentos" id="depoimentos">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Quem já provou, confirma</h2>
+        <p>Prints direto das conversas no WhatsApp — sem edição, sem exagero.</p>
+      </div>
+      <div class="dep-grid">
+        <div class="dep-card">
+          <div class="dep-photo"><img src="img/testemunho1.jpg" alt="Cliente segurando cookie recheado de nutella mordido"></div>
+          <p class="dep-quote">"Preciso nem falar nada né 🥲🤤"<span>A tristeza só volta quando acaba.</span></p>
+        </div>
+        <div class="dep-card">
+          <div class="dep-photo"><img src="img/testemunho3.jpg" alt="Cliente segurando cookie da Ias Cookies mordido, com a etiqueta da marca"></div>
+          <p class="dep-quote">"Nossa amiga, juro, que cookie maravilhoso. Nunca comi um cookie tão bom. Sinceramente você arrasou, vai longe."<span>Já pode ir fazendo mais que eu quero amanhã.</span></p>
+        </div>
+        <div class="dep-card">
+          <div class="dep-photo"><img src="img/testemunho2.jpg" alt="Cliente mostrando cookie mordido de perto"></div>
+          <p class="dep-quote">"Bomm, dms. Mn, surreal."<span>Melhor que tem 🔥</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO PEDIR -->
+  <section class="como-pedir" id="pedir">
+    <div class="wrap">
+      <div>
+        <div class="section-head">
+          <h2>Como pedir</h2>
+          <p>Três passos, tudo pelo WhatsApp — sem app, sem cadastro.</p>
+        </div>
+        <ul class="passos">
+          <li>
+            <div>
+              <h3>Chama no WhatsApp</h3>
+              <p>Clica no botão e manda um "oi" — a Ias responde combinando sabor, quantidade e data.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Escolhe o sabor</h3>
+              <p>Tradicional, com gotas de chocolate, ou recheado de nutella — o mais pedido da casa.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Combina a entrega</h3>
+              <p>Retirada ou entrega na Ilha do Governador e arredores, do jeito que for melhor pra você.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="cta-card">
+        <h3>Bateu a vontade?</h3>
+        <p>Chama agora e garante seus cookies fresquinhos direto da cozinha da Ias.</p>
+        <a class="btn" href="https://wa.me/5521973918684" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        <div class="local">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex:none;margin-top:2px;"><path d="M12 21s-7.5-4.6-10-9.3C0.3 8 2 4 6 4c2 0 3.3 1 4 2 0.7-1 2-2 4-2 4 0 5.7 4 4 7.7-2.5 4.7-10 9.3-10 9.3Z"/></svg>
+          <span>Ilha do Governador, Rio de Janeiro — feito por encomenda.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
-<footer>© Julia Rosas Nutricionista · CRN [NÚMERO] · Rio de Janeiro</footer>
 
-<script src="script.js" defer></script></body></html>
+<footer>
+  <div class="wrap">
+    <a href="#topo" class="brand">
+      <img src="img/logo.png" alt="Logo Ias Cookies" style="width:34px;height:34px;">
+      <span>Ias Cookies</span>
+    </a>
+    <div class="foot-links">
+      <a href="https://instagram.com/iascookies" target="_blank" rel="noopener">@iascookies</a>
+      <a href="https://wa.me/5521973918684" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
